@@ -15,7 +15,6 @@ import com.p3t3rp3r3z.navlib.R
  * create an instance of this fragment.
  */
 class DestinationFragmentTwo : Fragment() {
-    // TODO: Rename and change types of parameters
     private var param1: String? = null
 
     override fun onCreateView(

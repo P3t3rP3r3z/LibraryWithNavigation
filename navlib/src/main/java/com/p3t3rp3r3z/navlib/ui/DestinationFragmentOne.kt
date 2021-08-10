@@ -17,11 +17,11 @@ import com.p3t3rp3r3z.navlib.viewmodels.NavGraphViewModel
 
 class DestinationFragmentOne : Fragment() {
 
-    val safeArgs : DestinationFragmentOneArgs by navArgs()
-    // TODO: Rename and change types of parameters
     private var arugment: String? = null
     private lateinit var button : Button
     private lateinit var textView : TextView
+
+    val safeArgs : DestinationFragmentOneArgs by navArgs()
     val viewModel : NavGraphViewModel by navGraphViewModels(R.id.nav_graph)
 
     override fun onCreate(savedInstanceState: Bundle?) {

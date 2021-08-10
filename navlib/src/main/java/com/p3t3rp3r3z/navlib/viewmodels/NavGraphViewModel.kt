@@ -8,7 +8,6 @@ import com.p3t3rp3r3z.navlib.PointlessHandler
 import com.p3t3rp3r3z.navlib.R
 import com.p3t3rp3r3z.navlib.ui.DestinationFragmentOneDirections
 
-val TAG = "ViewModelTag"
 val ARGONE = "now"
 val ARGTWO = "nice"
 
