@@ -1,0 +1,3 @@
+include ':navlib'
+include ':app'
+rootProject.name = "LibraryWithNavigation"

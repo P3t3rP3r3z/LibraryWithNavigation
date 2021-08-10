@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/destinationFragmentOne">
+
+    <fragment
+        android:id="@+id/destinationFragmentOne"
+        android:name="com.p3t3rp3r3z.navlib.ui.DestinationFragmentOne"
+        android:label="fragment_destination_one"
+        tools:layout="@layout/fragment_destination_one" >
+        <argument
+            android:name="fragmentOneString"
+            app:argType="string"
+            android:defaultValue="I am the default safeArg for Fragment One"/>
+        <action
+            android:id="@+id/action_destinationFragmentOne_to_destinationFragmentThree"
+            app:destination="@id/destinationFragmentThree"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_destinationFragmentOne_to_destinationFragmentTwo"
+            app:destination="@id/destinationFragmentTwo"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/destinationFragmentTwo"
+        android:name="com.p3t3rp3r3z.navlib.ui.DestinationFragmentTwo"
+        android:label="fragment_destination_two"
+        tools:layout="@layout/fragment_destination_two" >
+        <action
+            android:id="@+id/action_destinationFragmentTwo_to_destinationFragmentOne"
+            app:destination="@id/destinationFragmentOne" />
+    </fragment>
+    <fragment
+        android:id="@+id/destinationFragmentThree"
+        android:name="com.p3t3rp3r3z.navlib.ui.DestinationFragmentThree"
+        android:label="fragment_destination_three"
+        tools:layout="@layout/fragment_destination_three" >
+        <argument
+            android:name="fragmentThreeString"
+            app:argType="string"
+            android:defaultValue=""/>
+        <action
+            android:id="@+id/action_destinationFragmentThree_to_destinationFragmentThreeSub1"
+            app:destination="@id/destinationFragmentThreeSub1" />
+        <action
+            android:id="@+id/action_destinationFragmentThree_to_destinationFragmentThreeSub2"
+            app:destination="@id/destinationFragmentThreeSub2" />
+    </fragment>
+    <fragment
+        android:id="@+id/destinationFragmentThreeSub1"
+        android:name="com.p3t3rp3r3z.navlib.ui.DestinationFragmentThreeSub1"
+        android:label="fragment_destination_three_sub1"
+        tools:layout="@layout/fragment_destination_three_sub1" >
+        <action
+            android:id="@+id/action_destinationFragmentThreeSub1_to_destinationFragmentOne"
+            app:destination="@id/destinationFragmentOne"
+            app:popUpTo="@id/destinationFragmentOne" />
+    </fragment>
+    <fragment
+        android:id="@+id/destinationFragmentThreeSub2"
+        android:name="com.p3t3rp3r3z.navlib.ui.DestinationFragmentThreeSub2"
+        android:label="fragment_destination_three_sub2"
+        tools:layout="@layout/fragment_destination_three_sub2" >
+        <action
+            android:id="@+id/action_destinationFragmentThreeSub2_to_destinationFragmentOne"
+            app:destination="@id/destinationFragmentOne" />
+    </fragment>
+</navigation>
