@@ -34,6 +34,9 @@ class MainFragment : Fragment() {
         super.onActivityCreated(savedInstanceState)
         viewModel = ViewModelProvider(this).get(MainViewModel::class.java)
 
+        /*
+         * Here we pass a handler to the library.
+         */
         PointlessController.setHandler(
             object : PointlessHandler{
                 override fun youClickedSomething() {

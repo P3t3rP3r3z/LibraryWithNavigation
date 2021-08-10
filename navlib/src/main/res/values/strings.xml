@@ -1,12 +1,12 @@
 <resources>
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="start_msg">Hi I'm the first fragment, \nI was designed to be the first view in the nav graph.\nIt all starts here!</string>
+    <string name="start_msg">Hi I\'m the first fragment, \nI was designed to be the first view in the nav graph.\nIt all starts here!</string>
     <string name="navigate_btn">Navigate to next Fragment</string>
     <string name="impressed_btn">Wow! Impressive!</string>
-    <string name="not_impressed_btn">pretend you're not impressed</string>
+    <string name="not_impressed_btn">pretend you\'re not impressed</string>
     <string name="so_cool">So cool!</string>
     <string name="dynamic_msg">There are lots of ways to dynamically\nchange the navigation behavior!</string>
-    <string name="wrong">Well, I think you're wrong.</string>
+    <string name="wrong">Well, I think you\'re wrong.</string>
     <string name="right_question">I know! Cool Right?!</string>
-    <string name="towel">Don't forget to bring a towel!</string>
+    <string name="towel">Don\'t forget to bring a towel!</string>
 </resources>
